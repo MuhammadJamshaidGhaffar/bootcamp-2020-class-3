@@ -1,11 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Main from "./Main";
+import "./MediaCard.css";
 
+const MediaCard = ({ title, body, imageUrl }) => (
+  <div id="main-container">
+    <h1>{title}</h1>
+    <p>{body}</p>
+    <img src={imageUrl} id="my-photo"></img>
+    <p>I am creating this using React</p>
+    <br />
+    <p>I am very excited to learn React</p>
+  </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Main name="M.Jamshaid Ghaffar" age={18} />
+    <MediaCard
+      title="Portfolio"
+      body="Hello! My Name is M.Jamshaid Ghaffar"
+      imageUrl={require("./jamshaid.jpg")}
+      className="MediaCard.css"
+    />
   </React.StrictMode>
 );
 
