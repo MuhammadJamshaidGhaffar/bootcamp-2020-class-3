@@ -1,0 +1,16 @@
+.Button {
+  display: inline-block;
+  margin: 1.5rem 1rem;
+  transform: skew(-31deg) rotateX(25deg);
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+.btn-theme-white {
+  background-color: black;
+  color: white;
+}
+
+.btn-theme-black {
+  background-color: white;
+  color: black;
+}
